@@ -1,0 +1,76 @@
+.navbar
+  display: flex
+  background-color: white
+  justify-content: space-between
+  @media (max-width: 768px)
+    height: 65px
+    align-items: flex-start
+  .nav-profile-wrapper
+    @media (max-width: 768px)
+      display: none
+  .navbar-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  @media (max-width: 768px)
+    justify-content: space-between
+    align-items: center
+    padding: 0
+    height: initial
+  .nav-page-name
+    padding-left: 63px
+    font-family: DM Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 36px
+    @media (max-width: 768px)
+      padding: 0
+      justify-content: center
+  // .nav-logo
+  //   display: flex
+  //   align-items: flex-start
+  //   padding-left: 1rem
+  //   width: 200px
+  //   font-family: DM Serif Display
+  //   font-style: normal
+  //   font-weight: normal
+  //   font-size: 20px
+  //   line-height: 30px
+  //   border-right: 2px solid #f0f0f0
+  //   height: 100%
+  //   @media (max-width: 768px)
+  //     display: none
+  //     height: 32px
+  //     align-items: center
+  //     border-right: none
+  .arrow-mobile
+    display: none
+    @media (max-width: 768px)
+      display: block
+  .logo-with-icon
+    display: flex
+    align-items: center
+  @media (min-width: 992px)
+    .menu
+      display: none
+  @media (max-width: 768px)
+    .ant-btn-primary
+      color: black
+      border: none
+      background: none
+      box-shadow: none
+      &:active, &:focus, &:hover  
+        background: none
+        color: black  
+    .ant-btn-icon-only 
+      width: 36px
+      height: 32px
+      font-size: 20px
+    .anticon svg 
+      width: 38px
+      height: 18px
+    .ant-layout-sider
+      display: none !important
+
+

@@ -1,0 +1,172 @@
+.fullProfile-wrapper
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  margin-top: 31px
+  @media (max-width: 768px)
+    justify-content: flex-start
+  .profile-photo
+    width: 100%
+    text-align: center
+    .ant-avatar
+      width: 82px !important
+      height: 82px !important
+      border: 8px solid #FFFFFF
+      box-shadow: 0px 6px 24px rgba(68, 68, 68, 0.24)
+      @media (max-width: 768px)
+        border: none
+    img
+      width: 92px !important
+      height: auto !important
+  .content-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 40px 0
+    @media (max-width: 768px)
+      flex-direction: column
+      padding: 0
+    .content-left-wrapper
+      width: 50%
+      padding: 0 10px
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      @media (max-width: 768px)
+        width: 100%
+      .profile-name-genre-wrapper
+        width: 100%
+        padding: 10px 0
+        .profile-name
+          font-family: DM Sans
+          font-style: normal
+          font-weight: bold
+          font-size: 20px
+          line-height: 30px
+          color: black
+        .profile-genre
+          font-family: DM Sans
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 27px
+          letter-spacing: 0.5px
+          color: #d5d5d5
+      .profile-bio
+        .bio-text
+          padding: 10px 0
+          font-family: DM Sans
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 22px
+          letter-spacing: 0.5px
+      .profile-audio-wrapper
+        width: 100%
+        padding: 10px 0
+        .profile-audio
+          display: flex
+          align-items: center
+          height: 48px
+          background: #FFFFFF
+          border: 1px solid #d5d5d5
+          box-sizing: border-box
+          border-radius: 8px
+          padding: 0 23px
+          margin: 10px 0
+          color: black
+      .profile-photos-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        .ant-image
+          padding: 0 10px
+          height: auto !important
+          width: 100%
+          img
+            max-height: 200px
+            min-height: auto
+    .content-right-wrapper
+      width: 50%
+      padding: 0 10px
+      @media (max-width: 768px)
+        width: 100%
+      .with-bordered
+        background: #FFFFFF
+        border: 1px solid rgba(15, 15, 15, 0.12)
+        box-sizing: border-box
+        border-radius: 12px
+      .t-right
+        font-family: DM Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 22px
+        letter-spacing: 0.5px
+        color: #dbdbdb
+      .t-content
+        font-family: DM Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 24px
+      .profile-right-genre-wrapper
+        padding: 12px 20px
+        margin: 12px 0
+        @extend .with-bordered
+        .right-title
+          @extend .t-right
+        .right-content
+          @extend .t-content
+      .profile-right-gender-wrapper
+        padding: 12px 20px
+        margin: 12px 0
+        @extend .with-bordered
+        .right-title
+          @extend .t-right
+        .right-content
+          @extend .t-content
+      .profile-right-date-of-birth
+        padding: 12px 20px
+        margin: 12px 0
+        @extend .with-bordered
+        .right-title
+          @extend .t-right
+        .right-content
+          @extend .t-content
+      .profile-right-address
+        padding: 12px 20px
+        margin: 12px 0
+        @extend .with-bordered
+        .right-title
+          @extend .t-right
+        .right-content
+          @extend .t-content
+      .profile-right-phone
+        padding: 12px 20px
+        margin: 12px 0
+        @extend .with-bordered
+        .right-title
+          @extend .t-right
+        .right-content
+          @extend .t-content
+      .profile-right-btn
+        button
+          font-family: DM Sans
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 22px
+          letter-spacing: 0.5px
+          background: black
+          color: white
+          min-height: 48px
+          padding: 4px 25px
+          border: none
+        @media (max-width: 768px)
+          text-align: center
+          button
+            width: 50%

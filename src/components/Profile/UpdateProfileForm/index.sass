@@ -1,0 +1,176 @@
+.update-profile-wrapper
+  height: 100%
+  display: flex
+  // align-items: center
+  @media (max-width: 768px)
+    margin-top: 30px
+    align-items: flex-start
+  .uploads-wrapper
+    display: flex
+    justify-content: space-between
+    //padding: 0 16px
+    margin-bottom: 20px
+    @media (max-width: 768px)
+      flex-direction: column
+      align-items: center
+      padding: 0
+      .ant-row
+        margin-bottom: 20px !important
+    .ant-row
+      width: 100%
+      margin: 0 16px
+  .dynamic
+    border: 1px dashed #0F0F0F !important
+    text-align: center
+  .add-more-wrapper
+    display: flex
+    justify-content: space-evenly
+    width: 100%
+    margin-bottom: 20px
+    @media (max-width: 768px)
+      flex-direction: column
+      padding: 0
+      align-items: center
+      justify-content: space-between
+    .single-add-more-wrapper
+      width: 45%
+      @media (max-width: 768px)
+        width: 100%
+      // padding: 0 16px
+      .ant-row
+        width: 100%
+        margin: 0
+      .add-more
+        margin-top: 10px
+        width: 100%
+        text-align: center
+        cursor: pointer
+  .ant-select-clear
+    display: none
+  .btn-update-wrapper
+    width: 100%
+    text-align: center
+    .btn-update-profile
+      width: 20%
+      @media (max-width: 768px)
+        width: 100%
+      height: 60px
+      background-color: black
+      color: white
+      border: none
+    .ant-btn-round
+      padding: 8px 35px !important
+  .bio-wrapper
+    padding-left: 16px
+    padding-right: 16px
+    @media (max-width: 768px)
+      padding-right: 0
+      padding-left: 0
+    .bio
+      height: 120px !important
+      padding-top: 15px
+  .form-items-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    .ant-row
+      width: 45%
+      margin-right: 16px
+      margin-left: 16px
+      @media (max-width: 768px)
+        width: 100%
+        margin-right: 0
+        margin-left: 0
+  .font-update-form
+    font-family: DM Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 27px
+    width: 100%
+  .ant-select-arrow
+    margin-right: 10px
+  .update-form-genre-select
+    .anticon
+      svg
+        fill: black
+        margin-right: 10px
+    .ant-select-selector
+      height: 64px
+      border-radius: 25px !important
+      background-color: #E7E7E7 !important
+      color: black !important
+      border: none !important
+    .ant-select-selection-placeholder
+      padding-left: 14px !important
+      color: #656565
+    .ant-select-selection-overflow
+      margin-left: 10px
+      height: 100%
+      .ant-select-selection-overflow-item
+        height: 100%
+        display: flex
+        align-items: center
+  .ant-select-multiple .ant-select-selection-item
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 41px
+    border-radius: 25px !important
+    background: black
+    color: white
+    border: none !important
+    font-family: DM Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 27px
+    padding: 0 15px
+  .ant-select-multiple .ant-select-selection-item-remove
+    display: none
+  .update-avatar
+    width: 100%
+  .ant-upload-picture-card-wrapper
+    text-align: center
+  .update-form-fullname
+    height: 64px
+    border-radius: 25px
+    background-color: #E7E7E7
+    border: none
+    padding-left: 25px !important
+  .update-form-gender-select
+    .ant-select-selector
+      height: 64px !important
+      display: flex
+      align-items: center
+      justify-content: center
+    .ant-select-selection-item
+      padding-left: 18px !important
+  .update-form-date-of-birth
+    height: 64px
+    width: 100%
+    border-radius: 25px
+    background-color: #E7E7E7
+    border: none
+    .ant-picker-input>input:placeholder-shown, .ant-picker-input>input
+      margin-left: 10px
+      font-family: DM Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 27px
+    svg
+      fill: black
+      margin-right: 10px
+  .update-form-space-date-pick
+    width: 100%
+  .ant-form-item-has-error .ant-input
+    background-color: #E7E7E7 !important
+    border: 1px solid #ff4d4f
+  input::placeholder
+    color: #656565 !important
+  .uploader
+    border-radius: 25px
+    background-color: #E7E7E7
+    padding: 20px

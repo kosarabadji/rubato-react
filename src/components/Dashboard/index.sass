@@ -1,0 +1,94 @@
+.navbar-wrapper
+  height: 100%
+  width: 100%
+  .navbar-layout
+    height: 100%
+    .navbar-layout-wrapper
+      display: flex
+      flex-direction: column
+      width: 100%
+  .content
+    display: flex
+    justify-content: center
+    background-color: white
+    padding: 0 200px
+    height: 100%
+    overflow: auto
+    @media (max-width: 768px)
+      width: 100%
+      padding: 0
+
+.ant-menu-inline .ant-menu-item
+  &::after
+    border-right: 3px solid black !important
+
+.menu-wrapper
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  .ant-menu-inline
+    margin-bottom: 10px !important
+  .menu-links
+    padding-left: 16px !important
+    display: flex
+    align-items: center
+    &:first-child
+      margin-bottom: 25px !important
+      align-items: flex-start
+      @media (max-width: 768px)
+        display: none
+      .menu-item-with-icon
+        .menu-item-title
+          font-family: DM Serif Display
+          font-style: normal
+          font-weight: normal
+          font-size: 20px
+          line-height: 30px
+          margin-left: 2px
+          color: black
+        svg
+          filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(6deg) brightness(104%) contrast(105%)
+    &:last-child
+      // position: absolute;
+      // bottom: 0;
+      flex-grow: 1
+      align-items: flex-end
+      .menu-item-with-icon
+        flex-direction: row-reverse
+        justify-content: flex-end
+        .menu-item-title
+          font-weight: normal
+          font-size: 14px
+          line-height: 22px
+          color: black !important
+          margin-right: 20px
+        svg
+          filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(6deg) brightness(104%) contrast(105%)
+      @media (max-width: 768px)
+        .menu-item-with-icon
+          flex-direction: row
+          justify-content: flex-start
+        .menu-item-title
+          margin-left: 20px
+  .menu-item-title
+    margin-left: 15px
+    color: #9f9f9f
+    font-family: DM Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 21px
+  .menu-item-with-icon
+    display: flex
+    align-items: center
+    svg
+      filter: invert(77%) sepia(3%) saturate(2%) hue-rotate(11deg) brightness(85%) contrast(79%)
+  .ant-menu-item-selected
+    background-color: transparent !important
+    .menu-item-with-icon
+      color: black
+      svg
+        filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(6deg) brightness(104%) contrast(105%)
+      .menu-item-title
+        color: black !important
